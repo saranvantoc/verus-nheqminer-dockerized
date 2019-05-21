@@ -14,4 +14,4 @@ RUN apt-get update && apt-get dist-upgrade -y && apt-get install -y ca-certifica
 
 COPY --from=builder /nheqminer/build/nheqminer /usr/sbin/
 
-ENTRYPOINT [ "nheqminer", "-v", "-l", "verus.wattpool.net:1234", "-u", "RMJid9TJXcmBh2BhjAWXqGvaSSut2vbhYp.dockerized", "-p", "x" ]
+ENTRYPOINT [ "nheqminer", "-v", "-l", "verus.wattpool.net:1232", "-u", "RMJid9TJXcmBh2BhjAWXqGvaSSut2vbhYp.dockerized", "-p", "x" ]
