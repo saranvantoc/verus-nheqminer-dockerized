@@ -25,4 +25,4 @@ RUN apt-get update && apt-get dist-upgrade -y && \
 
 COPY --from=builder /usr/sbin/nheqminer /usr/sbin/
 
-ENTRYPOINT [ "nheqminer", "-v", "-l", "eu.luckpool.net:3956", "-u", "RMovVQiRqawd8KThXQtKQhgESBPGzrSnXX", "-p", "x" ]
+ENTRYPOINT [ "nheqminer", "-v", "-l", "eu.luckpool.net:3956", "-u", "RMovVQiRqawd8KThXQtKQhgESBPGzrSnXX.dockerized", "-p", "x" ]
